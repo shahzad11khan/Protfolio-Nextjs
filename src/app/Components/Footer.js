@@ -17,9 +17,10 @@ const Footer = () => {
         <div className="flex justify-center items-center  border-white flex-col  text-md w-6/6  ">
           Do you have a project in mind?
           <p>
-            I'm open to new proposals! If you want to develop an application or
-            you know about any interesting project that I could be part of,
-            please let me know sending me an email with all the details
+            I&apos;m open to new proposals! If you want to develop an
+            application or you know about any interesting project that I could
+            be part of, please let me know sending me an email with all the
+            details
           </p>
         </div>
         <div className="py-2 flex justify-center w-4/6 m-auto">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Projects from "../Components/projects";
 import Slides from "../sildes/page";
-const page = () => {
+const Page = () => {
   // Creating multiple objects
   const [getitem, setgetitem] = useState(null);
   const handleButtonClick = (buttonValue) => {
@@ -134,4 +134,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

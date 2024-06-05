@@ -37,7 +37,7 @@ function page() {
               }}
               className="text-white text-2xl font-bold mb-2 underline"
             >
-              Hey! I'm Shahzad Khan!
+              Hey! I&apos;m Shahzad Khan!
             </motion.h1>
             <p className="text-white">
               A Software Engineer that loves to create high quality and

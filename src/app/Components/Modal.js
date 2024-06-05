@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Modal = ({ isclose }) => {
   const [formData, setFormData] = useState({
     SenderEmail: "",
@@ -25,7 +26,7 @@ const Modal = ({ isclose }) => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [handleKeyDown]); // Include handleKeyDown in the dependency array
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
