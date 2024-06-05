@@ -34,31 +34,28 @@ function Slider({ images }) {
   return (
     <div
       id="default-carousel"
-      class="relative w-full bg-gray-400 pt-3"
+      class="relative w-full bg-gray-300 py-5"
       data-carousel="slide"
     >
-      <p className="text-2xl flex items-center justify-center">My Projects</p>
-      <div className="slider-container relative h-56 rounded-lg md:h-96  flex justify-center">
-        <button className="prev mr-4" onClick={() => changeSlide(-1)}>
-          Previous
-        </button>
+      <span className="text-2xl flex items-center justify-center w-1/6 m-auto text-white underline shadow-xl shadow-red-200">
+        My Projects
+      </span>
+      <div className="flex justify-center mt-5">
         {images.map((imageUrl, index) => (
           <div
             key={index}
-            className="slide w-3/5 mt-8"
+            className="slide"
             style={{ display: index === currentSlideIndex ? "block" : "none" }}
           >
-            <img
+            <Image
               src={imageUrl}
               alt={`Slide ${index + 1}`}
-              className="h-80 rounded-md bg-green-500 w-full"
+              className="h-60 rounded-md  w-full"
+              width={500}
+              height={500}
             />
           </div>
         ))}
-
-        <button className="next ml-4" onClick={() => changeSlide(1)}>
-          Next
-        </button>
       </div>
     </div>
   );

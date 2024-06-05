@@ -5,110 +5,127 @@ const page = () => {
     <div class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
       <section class="">
         <div className="px-4 mx-auto max-w-screen-xl text-center  overflow-x-auto">
-          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+          <h1 class="mb-4 text-1xl font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-4xl mt-10 underline w-2/4 m-auto">
             Web Developer and Instructor with Expertise in MERN Stack
           </h1>
-          <p class="text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-            A dynamic and enthusiastic Computer Science graduate with a
-            comprehensive skill set spanning various programming languages and
-            computer science technologies. Proficient in database programming,
-            web development, and desktop application development, with a proven
-            ability to multitask effectively. Possessing a strong aptitude for
-            problem-solving and a track record of successful collaboration with
-            individuals from diverse backgrounds. Self-supported, driven, and
-            committed to continuous learning and professional growth, serving as
-            a Senior MERN Stack, PHP, and ASP.NET Web Developer at EncoderBytes
-            (Pvt) Ltd.
+          <p class="text-xs font-normal text-gray-300 lg:text-lg sm:px-16 lg:px-48">
+            A dynamic and enthusiastic JavaScript developer with a comprehensive
+            skill set spanning various JavaScript frameworks and technologies.
+            Proficient in web development using modern JavaScript libraries such
+            as React, Node.js, and Express. Demonstrates a proven ability to
+            multitask effectively and possesses a strong aptitude for
+            problem-solving. Known for successful collaboration with individuals
+            from diverse backgrounds. Self-supported, driven, and committed to
+            continuous learning and professional growth. Currently serving as a
+            Senior JavaScript Developer at EncoderBytes (Pvt) Ltd.
           </p>
         </div>
       </section>
 
-      <div className="flex gap-2 justify-evenly mt-3">
-        <div>
+      <div className="flex gap-2 justify-between mt-5 w-5/6 m-auto">
+        <div className="w-2/6">
           <a
             href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-all duration-700 hover:scale-110"
+            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
           >
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               S K I L L S
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Web Design & Web Development <br></br> MERN stack development{" "}
-              <br></br> Asp.Net development <br></br> PHP development <br></br>{" "}
-              Communication Skill <br></br> Composing <br></br> MySQL <br></br>{" "}
-              Problem-solving <br></br> Time Management <br></br> Computer
-              Languages: Next.js, React.js <br></br> MongoDB <br></br> XAMPP
-            </p>
+            <ul className="list-disc text-xs p-x-2">
+              <li>Web Design & Development</li>
+              <li>MERN STACK Development</li>
+              <li>Problem-solving</li>
+              <li>JavaScript</li>
+              <li>Next.js</li>
+              <li>React.js</li>
+              <li>MongoDB</li>
+              <li>XAMPP</li>
+            </ul>
           </a>
         </div>
-        <div class="max-h-[380px] overflow-y-auto rounded-lg transition-all duration-700 hover:scale-110">
+        <div className="w-2/6">
           <a
             href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 "
+            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
           >
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Projects
+              P R O J E C T S
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              BACKUP FILE SOFTWARE Using this sohware, I create a backup of the
-              original files which is uploaded to SAP Software. The reason is
-              that if the original file is deletedso we have all ready saved
-              that file in backup folder SCALE SOFTWARE This software is used
-              for taking the weights of the materials which are loaded into
-              tractor and trucks, e.g first weight and last weight . This first
-              and last weight minus from each other the resultan weight is the
-              material weight. VIRTUAL BOOK SHOP WEBSITE This project was made
-              for an online book shop for their clients to buy books from them
-              using mern. MEDICINE SUPPLIERS WEBSITES This project was made for
-              an supply a medicine for their clients to buy medicine from them
-              using mern. BULK FILE REMAINING SOFTWARE Using this software,
-              Rename the original files to the created date of the file and
-              store the old and new create name in the database. (CIR) Climate
-              Impact Information Resource (lIVE) I have developed a project
-              intended for the government to publish the Climate Impact
-              Information Resource Book (CIR) using mern. Ecommerce Web
-              Application I have developed Car Parts Selling web appliction
-              using mern. Alaqar-App (lIVE) I have developing a project intended
-              for the company for property deailing using mern.
+            <p className="font-normal text-gray-700 dark:text-gray-400 text-xs">
+              <ul className="list-disc text-xs">
+                <li>
+                  <a href="#" className="hover:text-blue-600">
+                    Portfolio (LIVE)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://encoderbytes.vercel.app/"
+                    className="hover:text-blue-600"
+                  >
+                    EncoderBytes (LIVE)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://scrapo.vercel.app/"
+                    className="hover:text-blue-600"
+                  >
+                    Scrapo (LIVE)
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a
+                    href="http://64.227.110.165:5000/"
+                    className="hover:text-blue-600"
+                  >
+                    Alaqar-App (LIVE)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="http://128.199.219.192/"
+                    className="hover:text-blue-600"
+                  >
+                    C I R (LIVE)
+                  </a>
+                </li>
+              </ul>
             </p>
           </a>
         </div>
-        <div class="max-h-[380px] overflow-y-auto rounded-lg transition-all duration-700 hover:scale-110">
+        <div className="w-2/6">
           <a
             href="#"
-            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 overflow-hidden"
+            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
           >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              W O R K E X P E R I E N C E
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              E X P E R I E N C E
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              SENIOR MERN STACK, PHP, AND ASP.NET WEB DEVELOPER/ ENCODERBYTES
-              (PVT) Senior MERN Stack Web Developer (Front End and Back End),
-              Also Proficient in ASP.NET and PHP Development Teach mern stack
-              course from the Side of EBLearning / Encoder Bytes. AS A
-              INSTRUCTOR Teach mern stack course in Shaykh Zayed Islamic Centre
-              University of peshawar under the (NAVTTC) organization. AS A
-              INSTRUCTOR IN SHAYKH ZAYED ISLAMIC CENTRE -- NAVTTC ALSO PERSONALY
-              TEACH WEB DEVELOPMENT CLASSES ONLINE USING GOOGEL MEET MIS
-              REPORTING AND DOTNET DEVELOPER / FF STEEL I have one year of
-              experience working with the .NET Framework, during which I
-              developed two software applications. The first is a backup file
-              utility, designed to securely manage and create backups of
-              important files. The second is a file renaming application,
-              facilitating bulk renaming of files for efficient organization
-            </p>
+            <ul className="list-disc text-sm p-x-2">
+              <li className="">
+                MERN STACK WEB DEVELOPER at ENCODERBYTES (PVT) (jun-22 to
+                Current)
+              </li>
+              <li>
+                MERN Stack Web Developer at String Technologies (PVT)
+                (january-23 to august-23)
+              </li>
+              <li>Code Alpha (Intern Full Stack) (jun-1 to jun-30) 23</li>
+            </ul>
           </a>
         </div>
       </div>
 
-      <div className="flex gap-4 justify-evenly my-6">
+      <div className="flex gap-4 justify-evenly py-6">
         <div className="transition-all duration-700 hover:scale-110">
           <Image
             className="rounded-md"
             src="/YoutubeQRCode.png"
             alt="GitHub QR Code"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
         <div className="transition-all duration-700 hover:scale-110">
@@ -116,8 +133,8 @@ const page = () => {
             className="rounded-md"
             src="/LinkedInQRcode.png"
             alt="LinkedIn QR Code"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
 
@@ -126,8 +143,8 @@ const page = () => {
             className="rounded-md"
             src="/GithubQRcode.png"
             alt="GitHub QR Code"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
       </div>

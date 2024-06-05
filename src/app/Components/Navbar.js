@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <nav className=" bg-slate-400 p-5">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center text-md">
         <Link href="/" className="text-white font-bold text-xl rounded">
           <Image src="/mylaptop.png" alt="Logo" width={100} height={40} />
         </Link>
@@ -50,11 +50,15 @@ const Navbar = () => {
           </Link>
           {/* <div className="flex justify-center items-center flex-col bg-slate-400"> */}
           <button
-            className="next bg-green size-12 text-black p-2 hover:shadow-md hover:shadow-cyan-400"
+            className="next bg-green size-12 text-black p-2 "
             onClick={handleContactMe}
           >
             {/* Contact me via WhatsApp */}
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              size={40}
+              className="hover:shadow-md hover:shadow-cyan-400"
+            />
           </button>
         </div>
       </div>

@@ -12,9 +12,9 @@ const Footer = () => {
     window.location.href = "https://wa.me/03116663715";
   };
   return (
-    <div className=" text-white">
-      <div className="grid border-b-2  border-white grid-cols-2 mt-4 ">
-        <div className="flex justify-center items-center border-b-2 border-white flex-col bg-slate-400">
+    <div className=" text-white ">
+      <div className="flex  w-4/6 m-auto  gap-5 justify-center items-center text-md mt-5">
+        <div className="flex justify-center items-center  border-white flex-col  text-md w-6/6  ">
           Do you have a project in mind?
           <p>
             I'm open to new proposals! If you want to develop an application or
@@ -22,38 +22,38 @@ const Footer = () => {
             please let me know sending me an email with all the details
           </p>
         </div>
-        <div className="flex justify-center border-b-2 border-white items-center flex-col bg-slate-400">
-          <button
-            className="next ml-4 border-2 bg-slate-400 text-black p-2 rounded-md hover:shadow-md hover:shadow-cyan-400"
-            onClick={() => setshowmodal(true)}
-          >
-            Contact me
-          </button>
-          {showmodal && <Modal isclose={() => setshowmodal(false)} />}
-        </div>
-        <div className="w-[900px]  ml-[35%] my-2">
-          <ul className="flex justify-evenly">
+        <div className="py-2 flex justify-center w-4/6 m-auto">
+          <ul className="flex flex-col  justify-between text-center text-xsP">
             <li>
               {" "}
-              <Link href="/" className="text-white mr-4">
+              <Link
+                href="/"
+                className="text-white mr-4  hover:underline hover:text-blue-500"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/project" className="text-white mr-4">
+              <Link
+                href="/project"
+                className="text-white mr-4 hover:underline hover:text-blue-500"
+              >
                 Projects
               </Link>
             </li>
             <li>
               {" "}
-              <Link href="/about" className="text-white mr-4">
+              <Link
+                href="/about"
+                className="text-white mr-4 hover:underlinehover:text-blue-500 "
+              >
                 About
               </Link>
             </li>
             <li>
               <Link
                 href="https://github.com/shahzad11khan"
-                className="text-white mr-4"
+                className="text-white mr-4 hover:underline hover:text-blue-500"
               >
                 Github
               </Link>
@@ -61,13 +61,27 @@ const Footer = () => {
             <li>
               <Link
                 href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                className="text-white mr-4 "
+                className="text-white mr-4 hover:underline hover:text-blue-500"
               >
                 LinkedIn
               </Link>
             </li>
           </ul>
         </div>
+        <div className=" ">
+          <button
+            className="next ml-4 border-2 bg-transparent text-black p-2 rounded-md hover:shadow-md hover:shadow-cyan-400"
+            onClick={() => setshowmodal(true)}
+          >
+            Contact me
+          </button>
+          <div>Email: shahzadkhan311666@gmail.com</div>
+          {showmodal && <Modal isclose={() => setshowmodal(false)} />}
+        </div>
+      </div>
+
+      {/* <div className="mt-5 pb-5 border-white border-2 flex justify-evenly  text-center items-center ">
+       
       </div>
       <div className="grid grid-cols-2">
         <div className="flex justify-center items-center flex-col bg-slate-400">
@@ -81,11 +95,10 @@ const Footer = () => {
             className="next ml-4 border-2 bg-green size-12 text-black p-2 rounded-md hover:shadow-md hover:shadow-cyan-400"
             onClick={handleContactMe}
           >
-            {/* Contact me via WhatsApp */}
             <FontAwesomeIcon icon={faWhatsapp} />
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
