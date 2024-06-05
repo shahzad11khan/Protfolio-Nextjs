@@ -2,23 +2,21 @@
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
-function Slider({ images }) {
-  //   console.log(images);
+function Slider({ images = [] }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  // Function to change the slide automatically
   const autoChangeSlide = useCallback(() => {
-    const newIndex = (currentSlideIndex + 1) % images.length;
-    setCurrentSlideIndex(newIndex);
+    if (images.length > 0) {
+      const newIndex = (currentSlideIndex + 1) % images.length;
+      setCurrentSlideIndex(newIndex);
+    }
   }, [currentSlideIndex, images.length]);
 
   useEffect(() => {
-    // Start auto-slide when the component mounts
-    const intervalId = setInterval(autoChangeSlide, 3000); // Change slide every 3 seconds
+    const intervalId = setInterval(autoChangeSlide, 3000);
 
-    // Clear interval when the component unmounts or changes
     return () => clearInterval(intervalId);
-  }, [autoChangeSlide]); // Include autoChangeSlide in the dependency array
+  }, [autoChangeSlide]);
 
   const changeSlide = (direction) => {
     let newIndex = currentSlideIndex + direction;
@@ -31,6 +29,10 @@ function Slider({ images }) {
 
     setCurrentSlideIndex(newIndex);
   };
+
+  if (images.length === 0) {
+    return <div>No images to display</div>;
+  }
 
   return (
     <div
@@ -51,7 +53,7 @@ function Slider({ images }) {
             <Image
               src={imageUrl}
               alt={`Slide ${index + 1}`}
-              className="h-60 rounded-md  w-full"
+              className="h-60 rounded-md w-full"
               width={500}
               height={500}
             />
