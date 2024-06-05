@@ -120,7 +120,7 @@ const page = () => {
         <div className="transition-all duration-700 hover:scale-110">
           <Image
             className="rounded-md"
-            src="/LinkedInQRcode.png"
+            src="/LinkedInQRCode.png"
             alt="LinkedIn QR Code"
             width={150}
             height={150}
@@ -130,7 +130,7 @@ const page = () => {
         <div className="transition-all duration-700 hover:scale-110">
           <Image
             className="rounded-md"
-            src="/GithubQRcode.png"
+            src="/GithubQRCode.png"
             alt="GitHub QR Code"
             width={150}
             height={150}
