@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Slides from "../app/sildes/page";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 function page() {
   const handleDownload = () => {
@@ -23,9 +25,20 @@ function page() {
             />
           </div>
           <div>
-            <h1 className="text-white text-2xl font-bold mb-2 underline">
+            {/* <h1 className="text-white text-2xl font-bold mb-2 underline">
               Hey! I'm Shahzad Khan!
-            </h1>
+            </h1> */}
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "spring",
+              }}
+              className="text-white text-2xl font-bold mb-2 underline"
+            >
+              Hey! I'm Shahzad Khan!
+            </motion.h1>
             <p className="text-white">
               A Software Engineer that loves to create high quality and
               user-centered digital products
@@ -45,7 +58,23 @@ function page() {
                 My Resume / CV
               </button>
             </div>
+            <div className="w-4/6 flex flex-col items-center justify-center text-center mt-5">
+              <div className="">
+                <CountUp
+                  start={2}
+                  end={15}
+                  duration={4}
+                  className=" text-2xl font-bold mb-2 pt-10 text-red-500"
+                />
+
+                <div className="text-white text-2xl font-bold mb-2">
+                  Completed Projects
+                </div>
+              </div>{" "}
+            </div>
           </div>
+
+          {/* counting */}
         </div>
       </div>
       <div>
