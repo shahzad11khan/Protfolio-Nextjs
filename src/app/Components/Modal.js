@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -15,18 +15,21 @@ const Modal = ({ isclose }) => {
     }
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") {
-      isclose();
-    }
-  };
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.key === "Escape") {
+        isclose();
+      }
+    },
+    [isclose]
+  );
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handleKeyDown]); // Include handleKeyDown in the dependency array
+  }, [handleKeyDown]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

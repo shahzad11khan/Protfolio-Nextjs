@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 function Slider({ images }) {
   //   console.log(images);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   // Function to change the slide automatically
-  const autoChangeSlide = () => {
+  const autoChangeSlide = useCallback(() => {
     const newIndex = (currentSlideIndex + 1) % images.length;
     setCurrentSlideIndex(newIndex);
-  };
+  }, [currentSlideIndex, images.length]);
 
   useEffect(() => {
     // Start auto-slide when the component mounts
@@ -18,7 +18,7 @@ function Slider({ images }) {
 
     // Clear interval when the component unmounts or changes
     return () => clearInterval(intervalId);
-  }, [currentSlideIndex]); // Re-run effect when currentSlideIndex changes
+  }, [autoChangeSlide]); // Include autoChangeSlide in the dependency array
 
   const changeSlide = (direction) => {
     let newIndex = currentSlideIndex + direction;
@@ -35,7 +35,7 @@ function Slider({ images }) {
   return (
     <div
       id="default-carousel"
-      class="relative w-full bg-gray-300 py-5"
+      className="relative w-full bg-gray-300 py-5"
       data-carousel="slide"
     >
       <span className="text-2xl flex items-center justify-center w-1/6 m-auto text-white underline shadow-xl shadow-red-200">
