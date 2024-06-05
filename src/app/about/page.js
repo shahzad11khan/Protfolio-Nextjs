@@ -24,10 +24,7 @@ const page = () => {
 
       <div className="flex gap-2 justify-between mt-5 w-5/6 m-auto">
         <div className="w-2/6">
-          <a
-            href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
-          >
+          <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               S K I L L S
             </h5>
@@ -41,65 +38,57 @@ const page = () => {
               <li>MongoDB</li>
               <li>XAMPP</li>
             </ul>
-          </a>
+          </div>
         </div>
         <div className="w-2/6">
-          <a
-            href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
-          >
+          <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               P R O J E C T S
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400 text-xs">
-              <ul className="list-disc text-xs">
-                <li>
-                  <a href="#" className="hover:text-blue-600">
-                    Portfolio (LIVE)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://encoderbytes.vercel.app/"
-                    className="hover:text-blue-600"
-                  >
-                    EncoderBytes (LIVE)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://scrapo.vercel.app/"
-                    className="hover:text-blue-600"
-                  >
-                    Scrapo (LIVE)
-                  </a>
-                </li>
-                <li>
-                  {" "}
-                  <a
-                    href="http://64.227.110.165:5000/"
-                    className="hover:text-blue-600"
-                  >
-                    Alaqar-App (LIVE)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://128.199.219.192/"
-                    className="hover:text-blue-600"
-                  >
-                    C I R (LIVE)
-                  </a>
-                </li>
-              </ul>
-            </p>
-          </a>
+            <ul className="list-disc text-xs">
+              <li>
+                <a href="#" className="hover:text-blue-600">
+                  Portfolio (LIVE)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://encoderbytes.vercel.app/"
+                  className="hover:text-blue-600"
+                >
+                  EncoderBytes (LIVE)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://scrapo.vercel.app/"
+                  className="hover:text-blue-600"
+                >
+                  Scrapo (LIVE)
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="http://64.227.110.165:5000/"
+                  className="hover:text-blue-600"
+                >
+                  Alaqar-App (LIVE)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://128.199.219.192/"
+                  className="hover:text-blue-600"
+                >
+                  C I R (LIVE)
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-2/6">
-          <a
-            href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110"
-          >
+          <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  transition-all duration-700 hover:scale-110">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               E X P E R I E N C E
             </h5>
@@ -114,7 +103,7 @@ const page = () => {
               </li>
               <li>Code Alpha (Intern Full Stack) (jun-1 to jun-30) 23</li>
             </ul>
-          </a>
+          </div>
         </div>
       </div>
 
